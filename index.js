@@ -353,46 +353,16 @@
             app.setAttribute("light-mode", "dark");
         }
         
-
-        const navbar = document.querySelector(".navbar");
-        const h = document.getElementById("h");
-        const p = document.getElementById("p");
-        const ff = document.getElementById("f");
-        const clcon = document.getElementById("cl");
-        const co = document.getElementById("co");
-        const bar1 = document.getElementById("bar1");
-        const bar2 = document.getElementById("bar2");
-        const bar3 = document.getElementById("bar3");
-        const nav = document.getElementById("nav");
-        
         function toggle_light_mode() {//navbar mode
             var app = document.getElementsByTagName("BODY")[0];
             if (localStorage.lightMode == "dark") {
                 localStorage.lightMode = "light";
                 app.setAttribute("light-mode", "light");
-                navbar.style.backgroundColor ="#f1f1f1"
-                h.style.color = "#121013";
-                p.style.color = "#121013";
-                ff.style.color = "#121013";
-                clcon.style.color = "#121013";
-                co.style.color = "#121013";
-                bar1.style.backgroundColor = "#121013";
-                bar2.style.backgroundColor = "#121013";
-                bar3.style.backgroundColor = "#121013";
-                nav.style.backgroundColor = "#F1F1F1";
+
             } else {
                 localStorage.lightMode = "dark";
                 app.setAttribute("light-mode", "dark");
-                navbar.style.backgroundColor = "#121013";
-                h.style.color = "#F1F1F1";
-                p.style.color = "#F1F1F1";
-                ff.style.color = "#F1F1F1";
-                clcon.style.color = "#F1F1F1";
-                co.style.color = "#F1F1F1";
-                bar1.style.backgroundColor = "#F1F1F1";
-                bar2.style.backgroundColor = "#F1F1F1";
-                bar3.style.backgroundColor = "#F1F1F1";
-                nav.style.backgroundColor = "#121013";
+
             }
         }
 
